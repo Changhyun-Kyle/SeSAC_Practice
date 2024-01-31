@@ -71,6 +71,7 @@ enum Discount {
             return VIPDiscountStrategy()
         case .coupon:
             return CouponDiscountStrategy()
+        
         }
     }
 }
@@ -149,7 +150,7 @@ struct Person {
 var discountPercentage: [Discount: Double] = [
     .none : 0,
     .vip : 0.1,
-    .coupon : 0.5,
+    .coupon : 0.5
 ]
 
 discountPercentage[.none] = 1000
