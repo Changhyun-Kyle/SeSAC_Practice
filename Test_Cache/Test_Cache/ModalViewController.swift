@@ -59,6 +59,7 @@ private extension ModalViewController {
         }
         catImageView.image = image
     }
+    
     func setOnDiskCacheImages() {
         guard
             let diskImage = CacheManager.shared.loadDiskCacheImage(),
