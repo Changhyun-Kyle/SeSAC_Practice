@@ -36,6 +36,7 @@ final class ModalViewController: UIViewController {
             CacheManager.shared.saveCache(image: image, key: self.cacheKey)
         }
     }
+    
     @IBAction private func bringURLCatButtonTapped(_ sender: UIButton) {
         loadImage(from: catUrlCacheString, into: urlCatImageView)
     }
