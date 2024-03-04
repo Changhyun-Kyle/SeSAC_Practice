@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2780DFF82B95B2A70066549E /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2780DFF72B95B2A70066549E /* CacheManager.swift */; };
 		2B4BF8EC2B95553300572331 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4BF8EB2B95553300572331 /* AppDelegate.swift */; };
 		2B4BF8EE2B95553300572331 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4BF8ED2B95553300572331 /* SceneDelegate.swift */; };
 		2B4BF8F02B95553300572331 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4BF8EF2B95553300572331 /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2780DFF72B95B2A70066549E /* CacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
 		2B4BF8E82B95553300572331 /* Test_Cache.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test_Cache.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B4BF8EB2B95553300572331 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2B4BF8ED2B95553300572331 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 				2B4BF8ED2B95553300572331 /* SceneDelegate.swift */,
 				2B4BF8EF2B95553300572331 /* ViewController.swift */,
 				2B4BF8FF2B9556E800572331 /* ModalViewController.swift */,
+				2780DFF72B95B2A70066549E /* CacheManager.swift */,
 				2B4BF8F12B95553300572331 /* Main.storyboard */,
 				2B4BF8F42B95553600572331 /* Assets.xcassets */,
 				2B4BF8F62B95553600572331 /* LaunchScreen.storyboard */,
@@ -142,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B4BF9002B9556E800572331 /* ModalViewController.swift in Sources */,
+				2780DFF82B95B2A70066549E /* CacheManager.swift in Sources */,
 				2B4BF8F02B95553300572331 /* ViewController.swift in Sources */,
 				2B4BF8EC2B95553300572331 /* AppDelegate.swift in Sources */,
 				2B4BF8EE2B95553300572331 /* SceneDelegate.swift in Sources */,

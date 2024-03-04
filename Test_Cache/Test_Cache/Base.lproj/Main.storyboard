@@ -49,37 +49,91 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="4ge-JT-hAx">
-                                <rect key="frame" x="20" y="118.66666666666663" width="353" height="350"/>
-                                <color key="tintColor" name="AccentColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="4ge-JT-hAx" secondAttribute="height" multiplier="1:1" id="08b-8X-iAz"/>
-                                </constraints>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N1X-dG-ma8">
-                                <rect key="frame" x="16" y="528" width="353" height="35"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="고양이 가져오기"/>
-                                <connections>
-                                    <action selector="bringCatButtonTapped:" destination="R1I-il-mjo" eventType="touchUpInside" id="nIm-UY-Kuh"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="S0u-LC-KRz">
+                                <rect key="frame" x="10" y="50" width="373" height="742"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ips-kh-YYs">
+                                        <rect key="frame" x="64.333333333333329" y="0.0" width="244.66666666666669" height="244.66666666666666"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="4ge-JT-hAx">
+                                                <rect key="frame" x="0.0" y="1.6666666666666643" width="244.66666666666666" height="119.33333333333334"/>
+                                                <color key="tintColor" name="AccentColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="4ge-JT-hAx" secondAttribute="height" multiplier="2:1" id="08b-8X-iAz"/>
+                                                </constraints>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N1X-dG-ma8">
+                                                <rect key="frame" x="24.666666666666671" y="122.33333333333334" width="195" height="122.33333333333334"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="NSCache로 가져와"/>
+                                                <connections>
+                                                    <action selector="bringCatButtonTapped:" destination="R1I-il-mjo" eventType="touchUpInside" id="nIm-UY-Kuh"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="I4L-8e-pAD">
+                                        <rect key="frame" x="64.333333333333329" y="248.66666666666669" width="244.66666666666669" height="244.66666666666669"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="5pJ-BH-A81">
+                                                <rect key="frame" x="0.0" y="1.6666666666666643" width="244.66666666666666" height="119.33333333333334"/>
+                                                <color key="tintColor" name="AccentColor"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xcg-iH-gYb">
+                                                <rect key="frame" x="17.666666666666671" y="122.33333333333331" width="209" height="122.33333333333331"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="DiskCache로 가져와"/>
+                                                <connections>
+                                                    <action selector="bringCatButtonTapped:" destination="R1I-il-mjo" eventType="touchUpInside" id="cqi-tZ-1T1"/>
+                                                    <action selector="bringDiskCatButtonTapped:" destination="R1I-il-mjo" eventType="touchUpInside" id="PG1-h5-FNY"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="5pJ-BH-A81" firstAttribute="width" secondItem="5pJ-BH-A81" secondAttribute="height" multiplier="2:1" id="YPJ-hB-RfP"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="kR1-zJ-JUO">
+                                        <rect key="frame" x="64.333333333333329" y="497.33333333333343" width="244.66666666666669" height="244.66666666666669"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="lwa-oM-yvg">
+                                                <rect key="frame" x="0.0" y="1.6666666666666643" width="244.66666666666666" height="119.33333333333334"/>
+                                                <color key="tintColor" name="AccentColor"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="If0-ve-6Ii">
+                                                <rect key="frame" x="18.333333333333343" y="122.33333333333326" width="208" height="122.33333333333331"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="URLCache로 가져와"/>
+                                                <connections>
+                                                    <action selector="bringCatButtonTapped:" destination="R1I-il-mjo" eventType="touchUpInside" id="uQp-k6-TCA"/>
+                                                    <action selector="bringDiskCatButtonTapped:" destination="R1I-il-mjo" eventType="touchUpInside" id="3Yf-sg-QZc"/>
+                                                    <action selector="bringURLCatButtonTapped:" destination="R1I-il-mjo" eventType="touchUpInside" id="sSA-dk-khP"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="lwa-oM-yvg" firstAttribute="width" secondItem="lwa-oM-yvg" secondAttribute="height" multiplier="2:1" id="Njb-Yp-wkB"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="7dK-Hz-XYd"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="7dK-Hz-XYd" firstAttribute="trailing" secondItem="4ge-JT-hAx" secondAttribute="trailing" constant="20" id="T9x-8S-p1e"/>
-                            <constraint firstItem="N1X-dG-ma8" firstAttribute="top" secondItem="4ge-JT-hAx" secondAttribute="bottom" constant="58" id="TRv-ZS-Nyl"/>
-                            <constraint firstItem="4ge-JT-hAx" firstAttribute="centerX" secondItem="1sI-zq-nEc" secondAttribute="centerX" id="YA9-Zt-AEi"/>
-                            <constraint firstItem="7dK-Hz-XYd" firstAttribute="trailing" secondItem="N1X-dG-ma8" secondAttribute="trailing" constant="20" id="f5m-0V-C55"/>
-                            <constraint firstItem="N1X-dG-ma8" firstAttribute="leading" secondItem="7dK-Hz-XYd" secondAttribute="leading" constant="20" id="iJJ-XW-WHm"/>
-                            <constraint firstItem="4ge-JT-hAx" firstAttribute="leading" secondItem="7dK-Hz-XYd" secondAttribute="leading" constant="20" id="nuR-l8-HMu"/>
-                            <constraint firstItem="4ge-JT-hAx" firstAttribute="top" secondItem="7dK-Hz-XYd" secondAttribute="top" constant="117" id="qhD-Ew-VFZ"/>
+                            <constraint firstItem="S0u-LC-KRz" firstAttribute="top" secondItem="7dK-Hz-XYd" secondAttribute="top" constant="50" id="RMx-mb-0PQ"/>
+                            <constraint firstItem="S0u-LC-KRz" firstAttribute="leading" secondItem="7dK-Hz-XYd" secondAttribute="leading" constant="10" id="mzn-d6-Rm1"/>
+                            <constraint firstItem="7dK-Hz-XYd" firstAttribute="bottom" secondItem="S0u-LC-KRz" secondAttribute="bottom" constant="50" id="qAJ-ci-yz8"/>
+                            <constraint firstItem="7dK-Hz-XYd" firstAttribute="trailing" secondItem="S0u-LC-KRz" secondAttribute="trailing" constant="10" id="qk4-9R-7BK"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="catDiskImageView" destination="5pJ-BH-A81" id="OnG-i7-OcK"/>
                         <outlet property="catImageView" destination="4ge-JT-hAx" id="yad-HK-onN"/>
+                        <outlet property="urlCatImageView" destination="lwa-oM-yvg" id="iED-WW-jzD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dqb-Si-88R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
