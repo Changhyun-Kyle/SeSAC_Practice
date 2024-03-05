@@ -13,6 +13,10 @@
 		2780E00D2B9775AB0066549E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2780E00B2B9775AB0066549E /* Main.storyboard */; };
 		2780E00F2B9775AD0066549E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2780E00E2B9775AD0066549E /* Assets.xcassets */; };
 		2780E0122B9775AD0066549E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2780E0102B9775AD0066549E /* LaunchScreen.storyboard */; };
+		2780E01A2B9775CF0066549E /* AdapterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2780E0192B9775CF0066549E /* AdapterViewController.swift */; };
+		2780E01C2B9775DD0066549E /* BridgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2780E01B2B9775DD0066549E /* BridgeViewController.swift */; };
+		2780E01E2B9775E60066549E /* CompositeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2780E01D2B9775E60066549E /* CompositeViewController.swift */; };
+		2780E0202B9775F50066549E /* TemplateMethodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2780E01F2B9775F50066549E /* TemplateMethodViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		2780E00E2B9775AD0066549E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2780E0112B9775AD0066549E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2780E0132B9775AD0066549E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2780E0192B9775CF0066549E /* AdapterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdapterViewController.swift; sourceTree = "<group>"; };
+		2780E01B2B9775DD0066549E /* BridgeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BridgeViewController.swift; sourceTree = "<group>"; };
+		2780E01D2B9775E60066549E /* CompositeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositeViewController.swift; sourceTree = "<group>"; };
+		2780E01F2B9775F50066549E /* TemplateMethodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateMethodViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,59 @@
 		2780E0042B9775AB0066549E /* Swift_DesignPattern */ = {
 			isa = PBXGroup;
 			children = (
+				2780E0212B9776020066549E /* App */,
+				2780E0252B9777DD0066549E /* View */,
+				2780E0242B9777D20066549E /* Controller */,
+				2780E0222B97760E0066549E /* DesignPattern */,
+				2780E0232B9777840066549E /* Resource */,
+			);
+			path = Swift_DesignPattern;
+			sourceTree = "<group>";
+		};
+		2780E0212B9776020066549E /* App */ = {
+			isa = PBXGroup;
+			children = (
 				2780E0052B9775AB0066549E /* AppDelegate.swift */,
 				2780E0072B9775AB0066549E /* SceneDelegate.swift */,
-				2780E0092B9775AB0066549E /* ViewController.swift */,
-				2780E00B2B9775AB0066549E /* Main.storyboard */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		2780E0222B97760E0066549E /* DesignPattern */ = {
+			isa = PBXGroup;
+			children = (
+				2780E0192B9775CF0066549E /* AdapterViewController.swift */,
+				2780E01B2B9775DD0066549E /* BridgeViewController.swift */,
+				2780E01D2B9775E60066549E /* CompositeViewController.swift */,
+				2780E01F2B9775F50066549E /* TemplateMethodViewController.swift */,
+			);
+			path = DesignPattern;
+			sourceTree = "<group>";
+		};
+		2780E0232B9777840066549E /* Resource */ = {
+			isa = PBXGroup;
+			children = (
 				2780E00E2B9775AD0066549E /* Assets.xcassets */,
 				2780E0102B9775AD0066549E /* LaunchScreen.storyboard */,
 				2780E0132B9775AD0066549E /* Info.plist */,
 			);
-			path = Swift_DesignPattern;
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		2780E0242B9777D20066549E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2780E0092B9775AB0066549E /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2780E0252B9777DD0066549E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2780E00B2B9775AB0066549E /* Main.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +191,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				2780E00A2B9775AB0066549E /* ViewController.swift in Sources */,
+				2780E01C2B9775DD0066549E /* BridgeViewController.swift in Sources */,
+				2780E0202B9775F50066549E /* TemplateMethodViewController.swift in Sources */,
+				2780E01E2B9775E60066549E /* CompositeViewController.swift in Sources */,
 				2780E0062B9775AB0066549E /* AppDelegate.swift in Sources */,
+				2780E01A2B9775CF0066549E /* AdapterViewController.swift in Sources */,
 				2780E0082B9775AB0066549E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,7 +349,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Swift_DesignPattern/Info.plist;
+				INFOPLIST_FILE = Swift_DesignPattern/Resource/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -320,7 +376,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Swift_DesignPattern/Info.plist;
+				INFOPLIST_FILE = Swift_DesignPattern/Resource/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
