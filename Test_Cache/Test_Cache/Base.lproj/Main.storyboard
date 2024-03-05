@@ -86,7 +86,6 @@
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="DiskCache로 가져와"/>
                                                 <connections>
-                                                    <action selector="bringCatButtonTapped:" destination="R1I-il-mjo" eventType="touchUpInside" id="cqi-tZ-1T1"/>
                                                     <action selector="bringDiskCatButtonTapped:" destination="R1I-il-mjo" eventType="touchUpInside" id="PG1-h5-FNY"/>
                                                 </connections>
                                             </button>
@@ -108,8 +107,6 @@
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="URLCache로 가져와"/>
                                                 <connections>
-                                                    <action selector="bringCatButtonTapped:" destination="R1I-il-mjo" eventType="touchUpInside" id="uQp-k6-TCA"/>
-                                                    <action selector="bringDiskCatButtonTapped:" destination="R1I-il-mjo" eventType="touchUpInside" id="3Yf-sg-QZc"/>
                                                     <action selector="bringURLCatButtonTapped:" destination="R1I-il-mjo" eventType="touchUpInside" id="sSA-dk-khP"/>
                                                 </connections>
                                             </button>
