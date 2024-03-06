@@ -7,21 +7,51 @@
 
 import UIKit
 
-class NetworkManager {
-    func fetchData(completion: @escaping (String) -> Void) {
-        // 네트워크 요청 로직 (예시로 문자열을 받아온다고 가정)
-        // completion("Data received from the server")
+final class NetworkManager: NetworkService, DataFetcher {
+    func requestData(completion: @escaping (UIImage) -> Void) {
+        fetchData(completion: completion)
+    }
+    
+    private let catUrlString = "https://i.kym-cdn.com/entries/icons/facebook/000/046/895/huh_cat.jpg"
+    func fetchData(completion: @escaping (UIImage) -> Void) {
+        guard let url = URL(string: catUrlString) else {
+            print("Failed to create URL")
+            return
+        }
+        let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
+            if let error = error {
+                print("Failed to load image: \(error.localizedDescription)")
+                return
+            }
+            
+            guard
+                let data = data,
+                let image = UIImage(data: data)
+            else {
+                print("Failed to convert data to image")
+                return
+            }
+            
+            DispatchQueue.main.async {
+                completion(image)
+            }
+        }
+        task.resume()
     }
 }
 
-class ViewController: UIViewController {
-    let networkManager = NetworkManager()
+final class ViewController: UIViewController {
+    @IBOutlet weak var catImageView: UIImageView!
+    private let networkManager = NetworkManager()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        networkManager.fetchData { data in
-            print(data)
-        }
+    }
+    
+    @IBAction func showButtonTapped(_ sender: UIButton) {
+        networkManager.fetchData { [weak self] image in
+            self?.catImageView.image = image
+        }    
     }
 }
 

@@ -6,45 +6,44 @@
 //
 
 import UIKit
-// Abstraction
-//protocol DataFetcher {
-//    func fetchData(completion: @escaping (String) -> Void)
-//}
 
-// Implementor
+/*
+ Bridge (브리지) 패턴:
+ - 추상화된 인터페이스와 구현을 분리하여 두 개를 독립적으로 변화할 수 있도록 하는 패턴.
+ 장점:
+ - 강한 결합을 피하고 더 나은 확장성과 유지보수성 제공.
+ - 추상화를 통해 코드의 유연성 증가.
+ 단점:
+ - 추가적인 추상화로 인해 복잡성이 증가할 수 있음.
+*/
+
 protocol NetworkService {
-    func requestData(completion: @escaping (String) -> Void)
+    func requestData(completion: @escaping (UIImage) -> Void)
 }
 
-// Concrete Implementor
-class BridgeNetworkManager: NetworkService {
-    func requestData(completion: @escaping (String) -> Void) {
-        // 네트워크 요청 로직 (예시로 문자열을 받아온다고 가정)
-        // completion("Data received from the server")
-    }
-}
-
-// Refined Abstraction
-class DataFetcherBridge: DataFetcher {
+final class DataFetcherBridge: DataFetcher {
     private let networkService: NetworkService
 
     init(networkService: NetworkService) {
         self.networkService = networkService
     }
 
-    func fetchData(completion: @escaping (String) -> Void) {
+    func fetchData(completion: @escaping (UIImage) -> Void) {
         networkService.requestData(completion: completion)
     }
 }
 
 final class BridgeViewController: UIViewController {
-    let dataFetcher: DataFetcher = DataFetcherBridge(networkService: BridgeNetworkManager())
+    @IBOutlet weak var catImageView: UIImageView!
+    private let dataFetcher: DataFetcher = DataFetcherBridge(networkService: NetworkManager())
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        dataFetcher.fetchData { data in
-            print(data)
+    }
+    
+    @IBAction func showButtonTapped(_ sender: UIButton) {
+        dataFetcher.fetchData { [weak self] image in
+            self?.catImageView.image = image
         }
     }
 }
