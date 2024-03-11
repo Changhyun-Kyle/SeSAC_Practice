@@ -7,22 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2757D9CA2B99909900B13BD7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2757D9C92B99909900B13BD7 /* AppDelegate.swift */; };
-		2757D9CC2B99909900B13BD7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2757D9CB2B99909900B13BD7 /* ContentView.swift */; };
-		2757D9CE2B99909B00B13BD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2757D9CD2B99909B00B13BD7 /* Assets.xcassets */; };
-		2757D9D12B99909B00B13BD7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2757D9D02B99909B00B13BD7 /* Preview Assets.xcassets */; };
+		2758BA922B9EC01000B37496 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2758BA912B9EC01000B37496 /* AppDelegate.swift */; };
+		2758BA942B9EC01000B37496 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2758BA932B9EC01000B37496 /* SceneDelegate.swift */; };
+		2758BA962B9EC01000B37496 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2758BA952B9EC01000B37496 /* ViewController.swift */; };
+		2758BA992B9EC01000B37496 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 2758BA982B9EC01000B37496 /* Base */; };
+		2758BA9B2B9EC01100B37496 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2758BA9A2B9EC01100B37496 /* Assets.xcassets */; };
+		2758BA9E2B9EC01100B37496 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 2758BA9D2B9EC01100B37496 /* Base */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2757D9C62B99909900B13BD7 /* ARKit_Practice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARKit_Practice.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		2757D9C92B99909900B13BD7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2757D9CB2B99909900B13BD7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		2757D9CD2B99909B00B13BD7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		2757D9D02B99909B00B13BD7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2758BA8E2B9EC01000B37496 /* Swift_ViewDrawingCycle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swift_ViewDrawingCycle.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2758BA912B9EC01000B37496 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2758BA932B9EC01000B37496 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		2758BA952B9EC01000B37496 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2758BA982B9EC01000B37496 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2758BA9A2B9EC01100B37496 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2758BA9D2B9EC01100B37496 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2758BA9F2B9EC01100B37496 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2757D9C32B99909900B13BD7 /* Frameworks */ = {
+		2758BA8B2B9EC01000B37496 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -32,77 +37,72 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2757D9BD2B99909900B13BD7 = {
+		2758BA852B9EC01000B37496 = {
 			isa = PBXGroup;
 			children = (
-				2757D9C82B99909900B13BD7 /* ARKit_Practice */,
-				2757D9C72B99909900B13BD7 /* Products */,
+				2758BA902B9EC01000B37496 /* Swift_ViewDrawingCycle */,
+				2758BA8F2B9EC01000B37496 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		2757D9C72B99909900B13BD7 /* Products */ = {
+		2758BA8F2B9EC01000B37496 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2757D9C62B99909900B13BD7 /* ARKit_Practice.app */,
+				2758BA8E2B9EC01000B37496 /* Swift_ViewDrawingCycle.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2757D9C82B99909900B13BD7 /* ARKit_Practice */ = {
+		2758BA902B9EC01000B37496 /* Swift_ViewDrawingCycle */ = {
 			isa = PBXGroup;
 			children = (
-				2757D9C92B99909900B13BD7 /* AppDelegate.swift */,
-				2757D9CB2B99909900B13BD7 /* ContentView.swift */,
-				2757D9CD2B99909B00B13BD7 /* Assets.xcassets */,
-				2757D9CF2B99909B00B13BD7 /* Preview Content */,
+				2758BA912B9EC01000B37496 /* AppDelegate.swift */,
+				2758BA932B9EC01000B37496 /* SceneDelegate.swift */,
+				2758BA952B9EC01000B37496 /* ViewController.swift */,
+				2758BA972B9EC01000B37496 /* Main.storyboard */,
+				2758BA9A2B9EC01100B37496 /* Assets.xcassets */,
+				2758BA9C2B9EC01100B37496 /* LaunchScreen.storyboard */,
+				2758BA9F2B9EC01100B37496 /* Info.plist */,
 			);
-			path = ARKit_Practice;
-			sourceTree = "<group>";
-		};
-		2757D9CF2B99909B00B13BD7 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				2757D9D02B99909B00B13BD7 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
+			path = Swift_ViewDrawingCycle;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2757D9C52B99909900B13BD7 /* ARKit_Practice */ = {
+		2758BA8D2B9EC01000B37496 /* Swift_ViewDrawingCycle */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2757D9D42B99909B00B13BD7 /* Build configuration list for PBXNativeTarget "ARKit_Practice" */;
+			buildConfigurationList = 2758BAA22B9EC01100B37496 /* Build configuration list for PBXNativeTarget "Swift_ViewDrawingCycle" */;
 			buildPhases = (
-				2757D9C22B99909900B13BD7 /* Sources */,
-				2757D9C32B99909900B13BD7 /* Frameworks */,
-				2757D9C42B99909900B13BD7 /* Resources */,
+				2758BA8A2B9EC01000B37496 /* Sources */,
+				2758BA8B2B9EC01000B37496 /* Frameworks */,
+				2758BA8C2B9EC01000B37496 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = ARKit_Practice;
-			productName = ARKit_Practice;
-			productReference = 2757D9C62B99909900B13BD7 /* ARKit_Practice.app */;
+			name = Swift_ViewDrawingCycle;
+			productName = Swift_ViewDrawingCycle;
+			productReference = 2758BA8E2B9EC01000B37496 /* Swift_ViewDrawingCycle.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		2757D9BE2B99909900B13BD7 /* Project object */ = {
+		2758BA862B9EC01000B37496 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1530;
 				LastUpgradeCheck = 1530;
 				TargetAttributes = {
-					2757D9C52B99909900B13BD7 = {
+					2758BA8D2B9EC01000B37496 = {
 						CreatedOnToolsVersion = 15.3;
 					};
 				};
 			};
-			buildConfigurationList = 2757D9C12B99909900B13BD7 /* Build configuration list for PBXProject "ARKit_Practice" */;
+			buildConfigurationList = 2758BA892B9EC01000B37496 /* Build configuration list for PBXProject "Swift_ViewDrawingCycle" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -110,42 +110,63 @@
 				en,
 				Base,
 			);
-			mainGroup = 2757D9BD2B99909900B13BD7;
-			productRefGroup = 2757D9C72B99909900B13BD7 /* Products */;
+			mainGroup = 2758BA852B9EC01000B37496;
+			productRefGroup = 2758BA8F2B9EC01000B37496 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2757D9C52B99909900B13BD7 /* ARKit_Practice */,
+				2758BA8D2B9EC01000B37496 /* Swift_ViewDrawingCycle */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		2757D9C42B99909900B13BD7 /* Resources */ = {
+		2758BA8C2B9EC01000B37496 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2757D9D12B99909B00B13BD7 /* Preview Assets.xcassets in Resources */,
-				2757D9CE2B99909B00B13BD7 /* Assets.xcassets in Resources */,
+				2758BA9B2B9EC01100B37496 /* Assets.xcassets in Resources */,
+				2758BA9E2B9EC01100B37496 /* Base in Resources */,
+				2758BA992B9EC01000B37496 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		2757D9C22B99909900B13BD7 /* Sources */ = {
+		2758BA8A2B9EC01000B37496 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2757D9CC2B99909900B13BD7 /* ContentView.swift in Sources */,
-				2757D9CA2B99909900B13BD7 /* AppDelegate.swift in Sources */,
+				2758BA962B9EC01000B37496 /* ViewController.swift in Sources */,
+				2758BA922B9EC01000B37496 /* AppDelegate.swift in Sources */,
+				2758BA942B9EC01000B37496 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		2758BA972B9EC01000B37496 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2758BA982B9EC01000B37496 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2758BA9C2B9EC01100B37496 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2758BA9D2B9EC01100B37496 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
-		2757D9D22B99909B00B13BD7 /* Debug */ = {
+		2758BAA02B9EC01100B37496 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -208,7 +229,7 @@
 			};
 			name = Debug;
 		};
-		2757D9D32B99909B00B13BD7 /* Release */ = {
+		2758BAA12B9EC01100B37496 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -264,22 +285,18 @@
 			};
 			name = Release;
 		};
-		2757D9D52B99909B00B13BD7 /* Debug */ = {
+		2758BAA32B9EC01100B37496 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"ARKit_Practice/Preview Content\"";
-				DEVELOPMENT_TEAM = K9NKZR257N;
-				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_FILE = Swift_ViewDrawingCycle/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
-				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -287,7 +304,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "changhyun-kyle.ARKit-Practice";
+				PRODUCT_BUNDLE_IDENTIFIER = "changhyun-kyle.Swift-ViewDrawingCycle";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -295,22 +312,18 @@
 			};
 			name = Debug;
 		};
-		2757D9D62B99909B00B13BD7 /* Release */ = {
+		2758BAA42B9EC01100B37496 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"ARKit_Practice/Preview Content\"";
-				DEVELOPMENT_TEAM = K9NKZR257N;
-				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_FILE = Swift_ViewDrawingCycle/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
-				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -318,7 +331,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "changhyun-kyle.ARKit-Practice";
+				PRODUCT_BUNDLE_IDENTIFIER = "changhyun-kyle.Swift-ViewDrawingCycle";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -329,25 +342,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2757D9C12B99909900B13BD7 /* Build configuration list for PBXProject "ARKit_Practice" */ = {
+		2758BA892B9EC01000B37496 /* Build configuration list for PBXProject "Swift_ViewDrawingCycle" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2757D9D22B99909B00B13BD7 /* Debug */,
-				2757D9D32B99909B00B13BD7 /* Release */,
+				2758BAA02B9EC01100B37496 /* Debug */,
+				2758BAA12B9EC01100B37496 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2757D9D42B99909B00B13BD7 /* Build configuration list for PBXNativeTarget "ARKit_Practice" */ = {
+		2758BAA22B9EC01100B37496 /* Build configuration list for PBXNativeTarget "Swift_ViewDrawingCycle" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2757D9D52B99909B00B13BD7 /* Debug */,
-				2757D9D62B99909B00B13BD7 /* Release */,
+				2758BAA32B9EC01100B37496 /* Debug */,
+				2758BAA42B9EC01100B37496 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 2757D9BE2B99909900B13BD7 /* Project object */;
+	rootObject = 2758BA862B9EC01000B37496 /* Project object */;
 }
