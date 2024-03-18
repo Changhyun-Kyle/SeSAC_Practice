@@ -46,7 +46,99 @@ class ViewController: UIViewController {
   }
   
   override func viewDidAppear(_ animated: Bool) {
+    openBasket()
+    openNapkins()
+    moveBugLeft()
+  }
+  
+  private func openBasket() {
+    basketTopConstraint.constant -= basketTop.frame.size.height
+    basketBottomConstraint.constant -= basketBottom.frame.size.height
+    
+    UIView.animate(
+      withDuration: 0.7,
+      delay: 1.0,
+      options: .curveEaseOut
+    ) {
+      self.view.layoutIfNeeded()
+    } completion: { finished in
+      print("Basket doors open!")
+    }
     
   }
   
+  private func openNapkins() {
+    UIView.animate(
+      withDuration: 1.0,
+      delay: 1.2,
+      options: .curveEaseOut
+    ) {
+      var fabricTopFrame = self.fabricTop.frame
+      fabricTopFrame.origin.y -= fabricTopFrame.size.height
+      
+      var fabricBottomFrame = self.fabricBottom.frame
+      fabricBottomFrame.origin.y += fabricBottomFrame.size.height
+      
+      self.fabricTop.frame = fabricTopFrame
+      self.fabricBottom.frame = fabricBottomFrame
+    } completion: { finished in
+      print("Napkins opened!")
+    }
+  }
+  
+  private func moveBugLeft() {
+    UIView.animate(
+      withDuration: 1.0,
+      delay: 2.0,
+      options: [.curveEaseInOut , .allowUserInteraction],
+      animations: {
+        self.bug.center = CGPoint(x: 75, y: 200)
+      },
+      completion: { finished in
+        print("Bug moved left!")
+        self.faceBugRight()
+      })
+  }
+  
+  private func faceBugRight() {
+    UIView.animate(
+      withDuration: 1.0,
+      delay: 0.0,
+      options: [.curveEaseInOut , .allowUserInteraction],
+      animations: {
+        self.bug.transform = CGAffineTransform(rotationAngle: .pi)
+      },
+      completion: { finished in
+        print("Bug faced right!")
+        self.moveBugRight()
+      })
+  }
+  
+  private func moveBugRight() {
+    UIView.animate(
+      withDuration: 1.0,
+      delay: 2.0,
+      options: [.curveEaseInOut , .allowUserInteraction],
+      animations: {
+        self.bug.center = CGPoint(x: self.view.frame.width - 75, y: 250)
+      },
+      completion: { finished in
+        print("Bug moved right!")
+        self.faceBugLeft()
+      })
+  }
+  
+  private func faceBugLeft() {
+    UIView.animate(
+      withDuration: 1.0,
+      delay: 0.0,
+      options: [.curveEaseInOut , .allowUserInteraction],
+      animations: {
+        self.bug.transform = CGAffineTransform(rotationAngle: 0.0)
+      },
+      completion: { finished in
+        print("Bug faced left!")
+        self.moveBugLeft()
+      })
+  }
 }
