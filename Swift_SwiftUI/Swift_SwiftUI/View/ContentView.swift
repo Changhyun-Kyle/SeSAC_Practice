@@ -7,13 +7,10 @@
 
 import SwiftUI
 
-final class ToggleModel: ObservableObject {
-    @Published var isEnvOn: Bool = false
-    @Published var nickName: String = "배가 고픈 하마"
-}
-
 struct ContentView: View {
-    @EnvironmentObject private var toggleModel: ToggleModel
+//    @EnvironmentObject private var toggleModel: ToggleModel
+    @Environment(ToggleModel.self) private var toggleModel
+    
     var body: some View {
         NavigationStack {
             TabView {
@@ -41,5 +38,5 @@ struct ContentView: View {
 
 #Preview {
     ContentView()
-        .environmentObject(ToggleModel())
+        .environment(ToggleModel())
 }

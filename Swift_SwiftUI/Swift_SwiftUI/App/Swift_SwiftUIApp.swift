@@ -9,11 +9,11 @@ import SwiftUI
 
 @main
 struct Swift_SwiftUIApp: App {
-    private let toggleModel = ToggleModel()
+    @State private var toggleModel = ToggleModel()
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .environmentObject(toggleModel)
+                .environment(toggleModel)
         }
     }
 }

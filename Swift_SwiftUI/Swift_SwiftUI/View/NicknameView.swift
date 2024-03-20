@@ -8,10 +8,17 @@
 import SwiftUI
 
 struct NicknameView: View {
-    @EnvironmentObject private var toggleModel: ToggleModel
+//        @EnvironmentObject private var toggleModel: ToggleModel
+    // MARK: - Macro
+    @Environment(ToggleModel.self) private var toggleModel
+    
     var body: some View {
+        @Bindable var toggleModel = toggleModel
         VStack {
-            TextField("진짜 닉네임을 써라", text: $toggleModel.nickName)
+            TextField(
+                "진짜 닉네임을 써라",
+                text: $toggleModel.nickName
+            )
                 .padding()
                 .border(Color.blue, width: 5)
         }
@@ -21,5 +28,5 @@ struct NicknameView: View {
 
 #Preview {
     NicknameView()
-        .environmentObject(ToggleModel())
+        .environment(ToggleModel())
 }

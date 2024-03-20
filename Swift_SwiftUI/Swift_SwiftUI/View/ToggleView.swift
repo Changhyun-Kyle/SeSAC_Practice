@@ -9,9 +9,10 @@ import SwiftUI
 
 struct ToggleView: View {
     @State private var isStateOn: Bool = false
-    @EnvironmentObject private var toggleModel: ToggleModel
+    @Environment(ToggleModel.self) private var toggleModel
     
     var body: some View {
+        @Bindable var toggleModel = toggleModel
         VStack {
             Text(toggleModel.nickName.isEmpty ? "닉네임을 설정해주세요" : toggleModel.nickName)
                 .bold()
@@ -34,5 +35,5 @@ struct ToggleView: View {
 
 #Preview {
     ToggleView()
-        .environmentObject(ToggleModel())
+        .environment(ToggleModel())
 }
